@@ -1,0 +1,252 @@
+/* -------------------------STYLES PHOTOGRID----------------------------- */
+
+.photos-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.photos-section {
+  max-width: 30%;
+}
+
+.photo-grid {
+  display: flex;
+  flex-direction: column;
+}
+.photo:hover .btn-save {
+  display: initial;
+}
+.photo:hover .btn-delete {
+  display: initial;
+}
+
+.photo-url {
+  display: flex;
+}
+
+.photo-url img {
+  border-radius: 5%;
+}
+
+/* ----------------------FORMULARIO INICIAL---------------------- */
+
+.background {
+  background-color: black;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+.form-content {
+  display: flex;
+  margin-bottom: 5em;
+  margin-left: 10%;
+}
+
+.title {
+  font-size: 30px;
+  margin-right: 1em;
+  color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+}
+.title:hover {
+  transform: scale(1.01);
+}
+
+.form-content form {
+  display: flex;
+  background-color: rgb(255, 247, 247);
+  border-radius: 3em;
+}
+.search {
+  width: 50vw;
+  height: 6vh;
+  background-color: transparent;
+  border-style: none;
+  margin-right: 1em;
+  border-radius: 3em;
+  padding-left: 2em;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
+.send-init {
+  background-color: transparent;
+  border-style: none;
+  color: whitesmoke;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.favs-init {
+  display: flex;
+  border-style: solid;
+  margin-left: 1em;
+  border-radius: 3em;
+  padding: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.h-init {
+  border: none;
+  margin-right: 0.3em;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+.favs-init:hover .h-init,
+.favs-init:hover {
+  background: black;
+  color: white;
+  border-color: white;
+}
+
+/* -----------------FORMULARIO DOS-------------------- */
+
+.background-two {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.form-content-two {
+  display: flex;
+}
+.form-two {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3em;
+  margin-right: 1em;
+}
+
+.title-two {
+  font-size: 30px;
+  margin-right: 1em;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+}
+.title-two:hover {
+  transform: scale(1.01);
+}
+
+.search-two {
+  width: 50vw;
+  height: 6vh;
+  background-color: transparent;
+  color: whitesmoke;
+  outline: none;
+  border-style: none;
+  margin-right: 1em;
+  border-radius: 3em;
+  padding-left: 2em;
+}
+.send {
+  border-style: none;
+  position: relative;
+  background-color: transparent;
+  margin-right: 2em;
+  padding: 1em;
+  color: white;
+}
+
+.favs {
+  display: flex;
+  border-style: solid;
+  margin-left: 1em;
+  border-radius: 3em;
+  padding: 1em;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 251, 251);
+}
+.h {
+  border: none;
+  margin-right: 0.3em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.favs:hover .h,
+.favs:hover {
+  background: rgb(255, 252, 252);
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+
+.home-photos-init {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 16%;
+}
+.home-photos-init img {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: whitesmoke;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-photos {
+  display: none;
+}
+/* --------------------------------BTN MAS-------------------------------------------- */
+.more {
+  width: 10em;
+  height: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  color: white;
+  background: black;
+}
+.more:hover {
+  background-color: white;
+  color: black;
+}
+/* -----------------------------BTN SAVE PHOTOS---------------------------------- */
+
+.btn-save {
+  display: none;
+  border-color: black;
+  background-color: rgba(99, 97, 97, 0.386);
+  width: 4em;
+  height: 3em;
+  position: absolute;
+  right: 5%;
+  top: 2em;
+  border-radius: 1em;
+}
+.btn-save:hover {
+  border-style: solid;
+  border-color: white;
+}
+.btn-save:hover i {
+  color: rgb(255, 0, 0);
+}
+
+.btn-save i {
+  color: white;
+}
+
+/* -------------------------------BTN DELETE FAVS------------------------------------- */
+
+.btn-delete {
+  display: none;
+  border-color: black;
+  background-color: rgba(99, 97, 97, 0.386);
+  width: 4em;
+  height: 3em;
+  position: absolute;
+  right: 5%;
+  top: 2em;
+  border-radius: 1em;
+}
+
+.btn-delete:hover {
+  border-style: solid;
+  border-color: white;
+}
+.btn-delete:hover i {
+  color: rgb(251, 249, 249);
+}
